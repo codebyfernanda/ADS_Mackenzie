@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Seção de metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para CSS externo -->
+    <link rel="stylesheet" href="site-vendas-estilo.css"/>
+
+    <!-- Título da página -->
+    <title>TODAStech.com.br | A sua central de produtos eletrônicos</title>
+</head>
+
+<body>
+
+        <!-- HEADER: navegação principal e o logo do site -->
+        <header class="cabeçalho">
+        <!-- Menu da esquerda -->
+        <nav class="menu-esquerda">
+            <a href="site-vendas-home.html">HOME</a>
+        </nav>
+
+        <!-- Logo central -->
+        <div class="logo-do-site">
+            <a href="site-vendas-home.html">
+                <img src="imagens/FT - Logo.png" alt="Logo do site TODAS tech">
+            </a>
+        </div>
+
+        <!-- Menu da direita -->
+        <div class="menu-direita">
+            <a href="site-vendas-contato.html">SOLICITE UM ORÇAMENTO</a>
+            <a href="site-vendas-forms.html">ENTRE EM CONTATO</a>
+        </div>
+    </header>
+
+<!-- ESTILO DO FORMULÁRIO (Chama "CSS interno") -->
+<style>
+    /* Estilo geral do body, centralizando o conteúdo de forma vertical e horizontal */
+    body {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        margin: 0;
+        height: 100vh; /* necessário para centralizar verticalmente, não esqueça! */
+    }
+
+    /* Estilo do título principal */
+    h1 {
+        text-align: center;
+        margin-top: 88px; 
+        color: #333;
+    }
+
+    /* Estilo da tabela do formulário */
+    table {
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Espaçamento das células da tabela */
+    td {
+        padding: 10px;
+    }
+
+    /* Estilo para inputs, select e textarea */
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Li na internet sobre e quis testar o ajuste para checkboxes */
+    input[type="checkbox"] {
+        width: auto;
+    }
+
+    /* Botão */
+    input[type="submit"] {
+        background-color: rgb(147, 255, 65);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+    }
+
+    /* Efeito hover para o botão */
+    input[type="submit"]:hover {
+        font-weight: bold;
+    } 
+
+    /* Container flex para o formulário para uso de um layout flexível */
+    .form-contato {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
+<!-- FORMULÁRIO DE CONTATO -->
+<main class="forms">
+    <form action="processa_formulario.php" method="post">
+
+        <!-- Tabela para estruturar os campos do formulário -->
+        <table> 
+            <!-- Campo Nome -->
+            <tr>
+                <td><label for="nome">Nome completo:</label></td>
+                <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlength="100"></td>
+            </tr>
+            
+            <!-- Campo Email -->
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="exemplo@email.com" required></td>
+            </tr>
+            
+            <!-- Campo Celular -->
+            <tr>
+                <td><label for="celular">Celular:</label></td>
+                <td><input type="cel" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx"></td>
+            </tr>
+
+            <!-- Campo Assunto -->
+            <tr>
+                <td><label for="assunto">Escreva aqui o seu assunto:</label></td>
+                <td>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Campo Mensagem -->
+            <tr>
+                <td><label for="mensagem">Mensagem:</label></td>
+                <td><textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea></td>
+            </tr>
+
+            <!-- Checkbox Novidades -->
+            <tr>
+                <td><label for="novidades">Deseja receber novidades?</label></td>
+                <td><input type="checkbox" id="novidades" name="novidades" value="sim"> Sim, desejo receber por e-mail</td>
+            </tr>
+
+            <!-- Botão de Envio -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Enviar Formulário">
+                </td>
+            </tr>
+        </table>
+    </form>
+</main>
+
+</body>
+</html>
+    
+    <!--FOOTER-->
+    <footer>
+        &copy; 2025 - desenvolvido por Fernanda Bastos. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
