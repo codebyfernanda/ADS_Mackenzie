@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Times Preferidos</title>
+</head>
+<body>
+
+<h1>Times Favoritos</h1>
+
+<script>
+    const times = [
+        {
+            modalidade: "Basquete em cadeira de rodas",
+            nome: "Seleção Brasileira de Basquete em cadeira de rodas",
+            jogadores: 12,
+            cor: "azul e amarelo",
+            imagem: "basquete.jpg"
+        },
+        {
+            modalidade: "Futebol americano",
+            nome: "Saints",
+            jogadores: 53,
+            cor: "preto e dourado",
+            imagem: "futebol-americano.jpg"
+        },
+        {
+            modalidade: "Futebol feminino",
+            nome: "Seleção Brasileira de Futebol feminino",
+            jogadores: 12,
+            cor: "amarelo e azul",
+            imagem: "futebol-feminino.jpg"
+        }
+    ];
+
+    document.write("<h2>Array com todas as informações:</h2>");
+    document.write("<pre>" + JSON.stringify(times, null, 2) + "</pre>");
+
+    let escolha = prompt(
+        "Escolha um time para exibir (1, 2 ou 3):\n" +
+        "1 - Seleção Brasileira de Basquete em cadeira de rodas (Basquete em cadeira de rodas)\n" +
+        "2 - Saints (Futebol americano)\n" +
+        "3 - Seleção Brasileira de Futebol feminino (Futebol feminino)"
+    );
+
+    escolha = parseInt(escolha) - 1;
+
+    if (escolha < 0 || escolha > 2) {
+        document.write("<p>Opção inválida.</p>");
+    } else {
+        let t = times[escolha];
+
+        document.write("<h2>Informações do time escolhido:</h2>");
+        document.write("<p><strong>Modalidade:</strong> " + t.modalidade + "</p>");
+        document.write("<p><strong>Time:</strong> " + t.nome + "</p>");
+        document.write("<p><strong>Quantidade de jogadores:</strong> " + t.jogadores + "</p>");
+        document.write("<p><strong>Cor predominante:</strong> " + t.cor + "</p>");
+        document.write("<p><strong>Foto do time:</strong></p>");
+        document.write(`<img src="${t.imagem}" width="200">`);
+    }
+
+</script>
+
+</body>
+</html>
