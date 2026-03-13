@@ -15,8 +15,8 @@ O conteúdo está organizado por disciplinas para facilitar a navegação:
  
 
 ## 🛠️ Tecnologias e Ferramentas
-* **Linguagens:** Python, Java.
-* **Ambiente:** VS Code, IntelliJ IDEA.
+* **Linguagens:** Python.
+* **Ambiente:** VS Code.
 * **Versionamento:** Git e GitHub.
 
 ## 🚀 Objetivo
