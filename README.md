@@ -24,4 +24,4 @@ Utilizo este espaço como um portfólio para demonstrar a minha evolução em ma
 
 ---
 **Contato:**
-[Seu LinkedIn] | [Seu E-mail] | [Link para sua Newsletter/Blog se houver]
+hellofernandabastos@gmail.com
