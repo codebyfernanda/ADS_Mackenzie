@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Seção de metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para CSS externo -->
+    <link rel="stylesheet" href="site-vendas-estilo.css"/>
+
+    <!-- Título da página -->
+    <title>TODAStech.com.br | A sua central de produtos eletrônicos</title>
+</head>
+<body>
+    <!-- HEADER: navegação principal e o logo do site.-->
+    <header class="cabeçalho">
+        <!-- Menu da esquerda -->
+    <nav class="menu-esquerda">
+        <a href="site-vendas-home.html">HOME</a>
+    </nav>
+
+    <!-- Logo central -->
+    <div class="logo-do-site">
+        <a href="site-vendas-home.html">
+            <img src="FT - Logo.png" alt="Logo do site TODAS tech">
+        </a>
+    </div>
+
+    <!-- Menu da direita -->
+    <div class="menu-direita">
+        <a href="site-vendas-contato.html">SOLICITE UM ORÇAMENTO</a>
+                <a href="site-vendas-forms.html">ENTRE EM CONTATO</a>
+    </div>
+    </header>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <main class="contato">
+    <form action="processa-contato.php" method="POST" class="form-contato">
+
+        <!-- Nome do usuário -->
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+        <!-- E-mail do usuário -->
+        <label for="email">Seu melhor e-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <!-- Assunto  -->
+        <label for="assunto">O(s) produto(s) de interesse:</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Escreva brevemente o assunto" required>
+
+        <!-- Meensagem do usuário -->
+        <label for="mensagem">Escreva aqui a sua mensagem / Dúvida:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui a sua mensagem" required></textarea>
+
+        <!-- Botão -->
+        <button type="submit">ENVIAR MENSAGEM</button>
+        </form>
+    </main>
+
+
+    <!--FOOTER-->
+    <footer>
+        &copy; 2025 - desenvolvido por Fernanda Bastos. Todos os direitos reservados.
+    </footer>
+    
+</body>
+</html>
