@@ -1,0 +1,98 @@
+/* ----------- ESTILOS GERAIS ----------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "aside1 aside2"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Áreas do grid */
+header {
+    grid-area: header;
+    background-color: #ffeb3b; /* amarelo */
+    padding: 10px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #00e5e5; /* ciano */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.main {
+    grid-area: main;
+    background-color: #8a2be2; /* roxo */
+    color: #ffeb3b; /* amarelo */
+    padding: 20px;
+    text-align: left;
+}
+
+.aside-1 {
+    grid-area: aside1;
+    background-color: #ccff00; /* verde-limão */
+    padding: 10px;
+}
+
+.aside-2 {
+    grid-area: aside2;
+    background-color: #ccff99; /* verde-claro */
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #00ff99; /* verde água */
+    padding: 10px;
+}
+
+/* ----------- DESIGN RESPONSIVO ----------- */
+@media (max-width: 480px) {
+.wrapper {
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside1"
+        "aside2"
+        "footer";
+    grid-template-columns: 1fr;
+}
+
+nav ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main {
+    font-size: 1.1rem;
+}
+}
