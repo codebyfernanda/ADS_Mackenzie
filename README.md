@@ -15,7 +15,7 @@ O conteúdo está organizado por disciplinas para facilitar a navegação:
  
 
 ## 🛠️ Tecnologias e Ferramentas
-* **Linguagens:** Python.
+* **Linguagens:** Python, HTML, CSS e Javascript.
 * **Ambiente:** VS Code.
 * **Versionamento:** Git e GitHub.
 
